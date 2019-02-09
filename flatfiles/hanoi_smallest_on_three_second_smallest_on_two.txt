@@ -20,3 +20,17 @@ fact: (pred obj1 obj2)
 rule: ((pred obj1 obj2) (pred obj2 obj3)) -> (pred obj1 obj3)
 
 """
+
+Game2 = KnowledgeBase()
+
+Game2.kb_assert (fact: (on disk1 peg3))
+Game2.kb_assert (fact: (on disk2 peg2))
+Game2.kb_assert (fact: (on disk3 peg1))
+Game2.kb_assert (fact: (on disk4 peg1))
+Game2.kb_assert (fact: (on disk5 peg1))
+
+Game2.kb_assert (fact: (ontop disk3 disk4))
+Game2.kb_assert (fact: (ontop disk4 disk5))
+
+Game2.kb_assert (rule: ((on ?x ?y) ~(ontop ?z ?x) -> (movable ?x ?y)))
+Game2.kb_assert (rule: ~(movable ?x ?y ?y))
