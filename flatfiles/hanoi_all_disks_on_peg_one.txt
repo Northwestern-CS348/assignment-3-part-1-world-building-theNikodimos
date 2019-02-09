@@ -32,9 +32,15 @@ Game1.kb_assert (fact: (ontop disk3 disk4))
 Game1.kb_assert (fact: (ontop disk2 disk3))
 Game1.kb_assert (fact: (ontop disk1 disk2))
 
+Game1.kb_assert (fact: (larger disk5 disk4))
+Game1.kb_assert (fact: (larger disk4 disk3))
+Game1.kb_assert (fact: (larger disk3 disk2))
+Game1.kb_assert (fact: (larger disk2 disk1))
 
-Game1.kb_assert (rule: ((on ?x ?y) ~(ontop ?z ?x) -> (movable ?x ?y)))
-Game1.kb_assert (rule: ~(movable ?x ?y ?y))
+Game1.kb_assert (fact: (empty peg2))
+Game1.kb_assert (fact: (empty peg3))
 
-
-
+Game1.kb_assert (rule: ((stackable ?d1 ?d2) ~(on ?x ?z) ~(ontop ?b ?x) -> (movable ?x ?y ?z)))
+Game1.kb_assert (rule: (~(movable ?x ?y ?y)))
+Game1.kb_assert (rule: (~(empty ?z) (larger ?x ?y) -> (stackable ?x ?y)))
+Game1.kb_assert (rule: (empty ?z) -> (movable ?x ?y ?z))
