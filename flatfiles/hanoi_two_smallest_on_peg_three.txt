@@ -42,3 +42,5 @@ game3.kb_assert (fact: (empty peg2))
 game3.kb_assert (rule: ((stackable ?d1 ?d2) ~(on ?x ?z) ~(ontop ?b ?x) -> (movable ?x ?y ?z)))
 game3.kb_assert (rule: (~(movable ?x ?y ?y)))
 game3.kb_assert (rule: (~(empty ?z) (larger ?x ?y) -> (stackable ?x ?y)))
+game3.kb_assert (rule: ((empty ?z) -> (movable ?x ?y ?z)))
+
