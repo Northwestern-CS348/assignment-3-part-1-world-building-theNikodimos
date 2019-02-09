@@ -39,6 +39,6 @@ Game2.kb_assert (fact: (larger disk2 disk1))
 
 Game2.kb_assert (rule: ((stackable ?d1 ?d2) ~(on ?x ?z) ~(ontop ?b ?x) -> (movable ?x ?y ?z)))
 Game2.kb_assert (rule: (~(movable ?x ?y ?y)))
-Game2.kb_assert (rule: (~(empty ?z) (larger ?x ?y) -> (stackable ?x ?y)))
+Game2.kb_assert (rule: ( (larger ?x ?y) -> (stackable ?x ?y)))
 Game2.kb_assert (rule: ((on ?x ?y) ~(ontop ?z ?x) -> (movable ?x ?y)))
 
