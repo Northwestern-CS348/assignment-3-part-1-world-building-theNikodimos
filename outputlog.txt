@@ -1,0 +1,70 @@
+TESTS WITH ERRORS 
+-------------------------------
+TESTS FAILED  
+test01 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/world-building/gradingtests.py", line 39, in test01
+    self.checkMovables(th, expectedMovables)
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/world-building/gradingtests.py", line 22, in checkMovables
+    'can be found: "%s"' % [str(x) for x in expected])
+AssertionError: False is not true : None of the expected Facts with MOVABLE predicate can be found: "['fact: (movable disk1 peg1 peg2)', 'fact: (movable disk1 peg1 peg3)']"
+
+test02 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/world-building/gradingtests.py", line 58, in test02
+    self.checkKb(th.kb, required, forbidden)
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/world-building/gradingtests.py", line 12, in checkKb
+    'Expected Fact cannot be found in KB: "%s"' % str(v))
+AssertionError: False is not true : Expected Fact cannot be found in KB: "fact: (on disk1 peg1)"
+
+test03 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/world-building/gradingtests.py", line 68, in test03
+    self.checkMovables(th, expectedMovables)
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/world-building/gradingtests.py", line 22, in checkMovables
+    'can be found: "%s"' % [str(x) for x in expected])
+AssertionError: False is not true : None of the expected Facts with MOVABLE predicate can be found: "['fact: (movable disk1 peg3 peg1)', 'fact: (movable disk1 peg3 peg2)', 'fact: (movable disk3 peg1 peg2)']"
+
+test04 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/world-building/gradingtests.py", line 91, in test04
+    self.checkKb(th.kb, required, forbidden)
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/world-building/gradingtests.py", line 12, in checkKb
+    'Expected Fact cannot be found in KB: "%s"' % str(v))
+AssertionError: False is not true : Expected Fact cannot be found in KB: "fact: (on disk1 peg3)"
+
+test05 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/world-building/gradingtests.py", line 101, in test05
+    self.checkMovables(th, expectedMovables)
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/world-building/gradingtests.py", line 22, in checkMovables
+    'can be found: "%s"' % [str(x) for x in expected])
+AssertionError: False is not true : None of the expected Facts with MOVABLE predicate can be found: "['fact: (movable disk1 peg3 peg1)', 'fact: (movable disk1 peg3 peg2)', 'fact: (movable disk2 peg2 peg1)']"
+
+test06 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/world-building/gradingtests.py", line 123, in test06
+    self.checkKb(th.kb, required, forbidden)
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/world-building/gradingtests.py", line 12, in checkKb
+    'Expected Fact cannot be found in KB: "%s"' % str(v))
+AssertionError: False is not true : Expected Fact cannot be found in KB: "fact: (on disk1 peg3)"
+
+test07 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/world-building/gradingtests.py", line 132, in test07
+    self.checkMovables(th, expectedMovables)
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/world-building/gradingtests.py", line 22, in checkMovables
+    'can be found: "%s"' % [str(x) for x in expected])
+AssertionError: False is not true : None of the expected Facts with MOVABLE predicate can be found: "['fact: (movable tile4 pos2 pos1 pos3 pos1)', 'fact: (movable tile8 pos3 pos2 pos3 pos1)']"
+
+test09 (gradingtests.UnitTests)
+Traceback (most recent call last):
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/world-building/gradingtests.py", line 163, in test09
+    self.checkMovables(th, expectedMovables)
+  File "/Users/k2i/academics/automatedgradingapp/app/testing/world-building/gradingtests.py", line 22, in checkMovables
+    'can be found: "%s"' % [str(x) for x in expected])
+AssertionError: False is not true : None of the expected Facts with MOVABLE predicate can be found: "['fact: (movable tile2 pos2 pos1 pos2 pos2)', 'fact: (movable tile8 pos1 pos2 pos2 pos2)', 'fact: (movable tile6 pos2 pos3 pos2 pos2)', 'fact: (movable tile4 pos3 pos2 pos2 pos2)']"
+
+-------------------------------
+TESTS SKIPPED 
+-------------------------------
